@@ -250,8 +250,8 @@ Extracts a substring based on a start index and length.
 // Replaces the first occurrence of a value.
 
  
-let str11 = "hello world";
-console.log(str11.replace("world", "JavaScript")); // Output: "hello JavaScript"
+// let str11 = "hello world";
+// console.log(str11.replace("world", "JavaScript")); // Output: "hello JavaScript"
 
 
 
@@ -259,8 +259,8 @@ console.log(str11.replace("world", "JavaScript")); // Output: "hello JavaScript"
 // Replaces all occurrences of a value.
 
  
-let str10 = "hello world, hello!";
-console.log(str10.replaceAll("hello", "hi")); // Output: "hi world, hi!"
+// let str10 = "hello world, hello!";
+// console.log(str10.replaceAll("hello", "hi")); // Output: "hi world, hi!"
 
 
 // Trimming
@@ -269,24 +269,24 @@ console.log(str10.replaceAll("hello", "hi")); // Output: "hi world, hi!"
 
 
 
-let str9 = "  hello  ";
-console.log(str9.trim()); // Output: "hello"
+// let str9 = "  hello  ";
+// console.log(str9.trim()); // Output: "hello"
 
 
 // trimStart() / trimLeft()
 // Removes whitespace from the start of the string.
 
  
-let str8 = "  hello";
-console.log(str8.trimStart()); // Output: "hello"
+// let str8 = "  hello";
+// console.log(str8.trimStart()); // Output: "hello"
 
 
 // trimEnd() / trimRight()
 // Removes whitespace from the end of the string.
 
 
-let str7 = "hello  ";
-console.log(str7.trimEnd()); // Output: "hello"
+// let str7 = "hello  ";
+// console.log(str7.trimEnd()); // Output: "hello"
 
 
 
@@ -295,16 +295,16 @@ console.log(str7.trimEnd()); // Output: "hello"
 // Splits the string into an array using the specified separator.
 
  
-let str6 = "a,b,c";
-console.log(str6.split(",")); // Output: ["a", "b", "c"]
+// let str6 = "a,b,c";
+// console.log(str6.split(",")); // Output: ["a", "b", "c"]
 
 
 // concat(...strings)
 // Concatenates the string with other strings.
  
-let str1 = "hello";
-let str2 = "world";
-console.log(str1.concat(" ", str2)); // Output: "hello world"
+// let str1 = "hello";
+// let str2 = "world";
+// console.log(str1.concat(" ", str2)); // Output: "hello world"
 
 
 // Checking Properties
@@ -314,8 +314,8 @@ console.log(str1.concat(" ", str2)); // Output: "hello world"
 
 
 
-let str3 = "123";
-console.log(isNaN(str3)); // Output: false
+// let str3 = "123";
+// console.log(isNaN(str3)); // Output: false
 
 
 
@@ -324,11 +324,23 @@ console.log(isNaN(str3)); // Output: false
 // Repeats the string count times.
 
  
-let str4 = "hello";
-console.log(str4.repeat(3)); // Output: "hellohellohello"
+// let str4 = "hello";
+// console.log(str4.repeat(3)); // Output: "hellohellohello"
 
 // toLocaleUpperCase() / toLocaleLowerCase()
 // Converts the string to upper/lower case considering the host locale.
 
-let str5 = "hello";
-console.log(str5.toLocaleUpperCase()); // Output: "HELLO"
+// let str5 = "hello";
+// console.log(str5.toLocaleUpperCase()); // Output: "HELLO"
+
+ 
+ 
+const url = "https://prafful.com/prafful%20sharma"
+
+console.log(url.replace('%20', '-'))
+console.log(url.includes('prafful'))
+console.log(url.includes('sunder'))
+
+
+console.log();
+
