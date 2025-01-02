@@ -19,10 +19,10 @@ if (userEmail) {
     
 // }
 
-const emptyObj = {}
-if(Object.keys(emptyObj).length === 0){
-    console.log("object is empty");
-}
+// const emptyObj = {}
+// if(Object.keys(emptyObj).length === 0){
+//     console.log("object is empty");
+// }
 /*
 false ==0:true
 false =='':true
@@ -31,9 +31,19 @@ false =='':true
 
 //Nullish  Coalescing Operator
 
-// let val1;
-// val1 = 5?? 10
+let val1;
+val1 = 5?? 10
 
 // val1 = null ?? 10 ?? 15
-  
-// console.log(val1); 
+// val1 = undefined ?? 15
+val1 = null ?? 10 ??  20
+console.log(val1); 
+
+// Terniary Operator
+
+// condition ? true  : false
+
+const iceTeaPrice = 100
+iceTeaPrice >= 80 ? console.log("less then 80"): console.log
+("more then 80")
+
