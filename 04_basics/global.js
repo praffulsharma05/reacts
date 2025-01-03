@@ -62,3 +62,24 @@ function thirdFunction() {
 }
 
 firstFunction(); 
+
+/*
+Global object
+The global object provides variables and functions that are available anywhere. By default,
+ those that are built into the language or the environment.
+In a browser it is named window, for Node.js it is global, for other environments it may have another name.
+Recently, globalThis was added to the language, as a standardized name for a global object, that should be supported
+ across all environments. It’s supported in all major browsers.
+We’ll use window here, assuming that our environment is a browser. If your script may run in other environments,
+ it’s better to use globalThis instead.
+
+
+Walking the DOM
+The DOM allows us to do anything with elements and their contents, but first we need to reach the corresponding DOM object.
+
+All operations on the DOM start with the document object. That’s the main “entry point” to DOM. From it we can access any node.
+Function declarations have the same effect (statements with function keyword in the main code flow, not function expressions).
+
+Please don’t rely on that! This behavior exists for compatibility reasons. Modern scripts use 
+JavaScript modules where such a thing doesn’t happen.
+ */
