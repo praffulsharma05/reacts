@@ -1,53 +1,24 @@
  <!DOCTYPE html>
  <html lang="en">
  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-    content="width=device-width,
-     initial-scale=1.0">
-
-    <title>chai aur code</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
  </head>
-
- <body style="background-color: #212121; color: #fff;">
-
-    <ul class="language">
-        <li>JavaScript</li>
-    </ul>
+ <body style="background-color: black; color: seashell; ">
+  <div class="parent">
+    <div class="day">monday</div>
+    <div class="day">tuesday</div>
+    <div class="day">wenesday</div>
+    <div class="day">friday</div>
+  </div>
  </body>
  <script>
-    function addLanguage(langName){
-        const li = document.createElement('li');
-        li.innerHTML  = `${langName}`
-        document.querySelector('.language').
-        appendChild(li)
-    }
-    addLanguage("python")
-    addLanguage("java")
-    addLanguage("golang")
-
-    function addOptiLanguage(langName){
-    const li =   document.createElement('li');
-    li.appendChild(document.createTextNode(langName))
-    document.querySelector('.language').appendChild(li)
-    }
-    addOptiLanguage('joavvv')
-
-    //Edit 
-   const secondlang = document.querySelector("li:nth-child(2)")
-   console.log(secondlang);
-   //secondlang.innerHTML = "Mojo"
-   const newli = document.createElement('li')
-   document.createElement('li')
-   newli.textContent = "Mojo"
-   secondlang.replaceWith(newli)
-
-   //edit
-   const firstlang = document.querySelector("li:first-child")
-   firstlang.outerHTML = '<li>ssssss</li>'
-
-   //remove
-   const lastlang = document.querySelector('li:last-child')
-   lastlang.remove()
-     </script>
+    const parent =  document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[i].innerHTML);
+       
+    
+ </script>
  </html>
